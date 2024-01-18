@@ -1,0 +1,115 @@
+
+### 1. File Systems:
+
+**Explanation:**
+Binary trees can represent directory structures efficiently. Each node in the tree corresponds to a directory or file, and the left and right children represent subdirectories or files within that directory.
+
+**C++ Code:**
+```cpp
+#include <iostream>
+#include <string>
+using namespace std;
+
+class FileSystemNode {
+public:
+    string name;
+    FileSystemNode* left;
+    FileSystemNode* right;
+
+    FileSystemNode(string name) : name(name), left(nullptr), right(nullptr) {}
+};
+
+int main() {
+    FileSystemNode* root = new FileSystemNode("Root");
+    root->left = new FileSystemNode("Documents");
+    root->right = new FileSystemNode("Images");
+    root->left->left = new FileSystemNode("TextFiles");
+    
+    // Add more nodes and directories as needed
+    
+    // Perform operations on the file system tree
+    
+    return 0;
+}
+```
+
+### 2. Database Indexing:
+
+**Explanation:**
+Binary search trees (BST) are commonly used in databases to speed up search, insertion, and deletion operations. The ordering property of BSTs helps in efficient data retrieval.
+
+**C++ Code:**
+```cpp
+#include <iostream>
+using namespace std;
+
+class TreeNode {
+public:
+    int data;
+    TreeNode* left;
+    TreeNode* right;
+
+    TreeNode(int data) : data(data), left(nullptr), right(nullptr) {}
+};
+
+class BinarySearchTree {
+private:
+    TreeNode* root;
+
+public:
+    BinarySearchTree() : root(nullptr) {}
+
+    // Implement BST operations like insert, search, and delete
+};
+
+int main() {
+    BinarySearchTree database;
+    
+    // Perform database operations using BST methods
+    
+    return 0;
+}
+```
+
+### 3. Symbol Tables in Compilers:
+
+**Explanation:**
+Symbol tables in compilers store information about variables, functions, and other symbols. Binary search trees are used for efficient symbol lookup and storage.
+
+**C++ Code:**
+```cpp
+#include <iostream>
+#include <string>
+using namespace std;
+
+class SymbolTableNode {
+public:
+    string identifier;
+    // Additional information about the symbol
+    // ...
+
+    SymbolTableNode* left;
+    SymbolTableNode* right;
+
+    SymbolTableNode(string identifier) : identifier(identifier), left(nullptr), right(nullptr) {}
+};
+
+class SymbolTable {
+private:
+    SymbolTableNode* root;
+
+public:
+    SymbolTable() : root(nullptr) {}
+
+    // Implement symbol table operations
+};
+
+int main() {
+    SymbolTable symbolTable;
+    
+    // Perform symbol table operations
+    
+    return 0;
+}
+```
+

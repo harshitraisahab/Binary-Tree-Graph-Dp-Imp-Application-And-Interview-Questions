@@ -1,0 +1,101 @@
+
+### 4. Expression Trees in Compilers:
+
+**Explanation:**
+Expression trees are used to represent mathematical expressions in compilers. Each node in the tree represents an operand or operator, aiding in the parsing and evaluation of expressions.
+
+**C++ Code:**
+```cpp
+#include <iostream>
+#include <string>
+using namespace std;
+
+class ExpressionTreeNode {
+public:
+    string value;
+    ExpressionTreeNode* left;
+    ExpressionTreeNode* right;
+
+    ExpressionTreeNode(string value) : value(value), left(nullptr), right(nullptr) {}
+};
+
+// Implement functions to parse and build expression trees
+
+int main() {
+    ExpressionTreeNode* root = new ExpressionTreeNode("+");
+    root->left = new ExpressionTreeNode("5");
+    root->right = new ExpressionTreeNode("*");
+    root->right->left = new ExpressionTreeNode("3");
+    root->right->right = new ExpressionTreeNode("2");
+
+    // Perform operations on the expression tree
+    
+    return 0;
+}
+```
+
+### 5. Network Routing Algorithms:
+
+**Explanation:**
+Binary trees can be used in hierarchical routing structures for efficient network routing decisions. Nodes in the tree represent network nodes or IP addresses.
+
+**C++ Code:**
+```cpp
+#include <iostream>
+#include <string>
+using namespace std;
+
+class NetworkNode {
+public:
+    string ipAddress;
+    NetworkNode* left;
+    NetworkNode* right;
+
+    NetworkNode(string ipAddress) : ipAddress(ipAddress), left(nullptr), right(nullptr) {}
+};
+
+// Implement network routing algorithms using the binary tree
+
+int main() {
+    NetworkNode* root = new NetworkNode("192.168.1.0");
+    root->left = new NetworkNode("192.168.0.0");
+    root->right = new NetworkNode("192.168.2.0");
+
+    // Perform network routing operations
+    
+    return 0;
+}
+```
+
+### 6. Huffman Coding for Compression:
+
+**Explanation:**
+Huffman trees, a type of binary tree, are used in data compression algorithms like Huffman coding. They provide an optimal prefix-free encoding for symbols based on their frequencies.
+
+**C++ Code:**
+```cpp
+#include <iostream>
+#include <queue>
+using namespace std;
+
+class HuffmanNode {
+public:
+    char symbol;
+    int frequency;
+    HuffmanNode* left;
+    HuffmanNode* right;
+
+    HuffmanNode(char symbol, int frequency) : symbol(symbol), frequency(frequency), left(nullptr), right(nullptr) {}
+};
+
+// Implement Huffman coding and decoding using the Huffman tree
+
+int main() {
+    // Build Huffman tree based on symbol frequencies
+    
+    // Encode and decode data using Huffman tree
+    
+    return 0;
+}
+```
+

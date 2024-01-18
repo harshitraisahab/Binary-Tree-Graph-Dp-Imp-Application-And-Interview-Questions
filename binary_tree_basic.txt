@@ -1,0 +1,59 @@
+### 1. Question: What is a binary tree?
+   Answer: A binary tree is a hierarchical data structure in which each node has at most two children, referred to as the left child and the right child.
+
+### 2. Question: What is the height of a binary tree?
+   Answer: The height of a binary tree is the length of the longest path from the root to a leaf node.
+
+### 3. Question: What is a full binary tree?
+   Answer: A full binary tree is a binary tree in which every node has either 0 or 2 children.
+
+### 4. Question: Explain the concept of a binary search tree (BST).
+   Answer: A binary search tree is a binary tree where the left subtree of a node contains only nodes with values less than the node's value, and the right subtree only contains nodes with values greater than the node's value.
+
+### 5. Question: How do you traverse a binary tree in preorder?
+   Answer: Preorder traversal involves visiting the root node first, then recursively traversing the left subtree and the right subtree.
+
+### 6. Question: What is an inorder traversal of a binary tree?
+   Answer: In inorder traversal, the left subtree is recursively traversed, followed by visiting the root node, and finally, the right subtree is recursively traversed.
+
+### 7. Question: Explain postorder traversal.
+   Answer: Postorder traversal involves recursively traversing the left subtree, the right subtree, and then visiting the root node.
+
+### 8. Question: How do you determine if a binary tree is balanced?
+   Answer: A binary tree is balanced if the height of the left and right subtrees of any node differ by at most one.
+
+### 9. Question: What is the time complexity of searching in a binary search tree?
+   Answer: The time complexity of searching in a binary search tree is O(h), where h is the height of the tree.
+
+### 10. Question: How can you convert a binary search tree into a sorted linked list?
+   Answer: Perform an inorder traversal of the binary search tree and update the pointers to form a sorted linked list.
+
+### 11. Question: Explain the concept of a perfect binary tree.
+   Answer: A perfect binary tree is a binary tree in which all levels are completely filled, and all leaf nodes are at the same level.
+
+### 12. Question: How do you find the lowest common ancestor in a binary tree?
+   Answer: Use a bottom-up approach to traverse the tree and find the first common ancestor of the given nodes.
+
+### 13. Question: What is a binary heap?
+   Answer: A binary heap is a complete binary tree that satisfies the heap property (either max-heap or min-heap).
+
+### 14. Question: How do you perform level-order traversal in a binary tree?
+   Answer: Use a queue to traverse the binary tree level by level, starting from the root.
+
+### 15. Question: Explain the Morris Traversal for inorder traversal.
+   Answer: Morris Traversal is an in-place traversal method for binary trees without using recursion or extra space.
+
+### 16. Question: How can you check if a binary tree is a subtree of another binary tree?
+   Answer: Traverse the larger tree and check at each node if it is the root of a subtree identical to the smaller tree.
+
+### 17. Question: What is a binary tree zigzag level order traversal?
+   Answer: Zigzag level order traversal alternates between left-to-right and right-to-left order at each level.
+
+### 18. Question: How can you find the maximum width of a binary tree?
+   Answer: Use level-order traversal and keep track of the number of nodes at each level.
+
+### 19. Question: Explain the concept of threaded binary trees.
+   Answer: Threaded binary trees optimize tree traversal by adding extra pointers to nodes to avoid the use of a stack for recursion.
+
+### 20. Question: How do you check if a binary tree is symmetric?
+   Answer: A binary tree is symmetric if its left and right subtrees are mirror images of each other. Use a recursive approach to check for symmetry.
